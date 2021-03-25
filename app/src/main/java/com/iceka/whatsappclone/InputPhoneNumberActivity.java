@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -40,7 +41,8 @@ public class InputPhoneNumberActivity extends AppCompatActivity {
     private String countryName;
 
     private ProgressDialog mProgressDialog;
-
+   FirebaseDatabase firebaseDatabase;
+FirebaseAuth auth;
     private DatabaseReference mCountryCodesReference;
 
     @Override
@@ -54,14 +56,15 @@ public class InputPhoneNumberActivity extends AppCompatActivity {
         Button mNext = findViewById(R.id.bt_next_input_number);
         mEtCountryName = findViewById(R.id.et_country_name);
 
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        auth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
         mCountryCodesReference = firebaseDatabase.getReference().child("country_codes");
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         mEtPhoneNumber.requestFocus();
-
+        
 
         mNext.setOnClickListener(new View.OnClickListener() {
             @Override

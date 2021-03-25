@@ -9,7 +9,6 @@ Give some appreciation by clicking star the repo to support the project
 ### Screenshots
 <img src="SS Chat.jpg" width="220"/> <img src="SS Chat Room.jpg" width="220"/> <img src="SS Contact.jpg" width="220"/> <img src="SS Status.jpg" width="220"/> <img src="SS Create Status.jpg" width="220"/> <img src="SS Status View.jpg" width="220"/>
 
-# How To Use 
 First you need to create FireBase Project. Download the google-service.json file and put it under /app folder like this: <img src = "https://www.gstatic.com/mobilesdk/160426_mobilesdk/images/android_studio_project_panel@2x.png" width="120"/>
 
 After you complete creating your FireBase then you need to create FireBase Cloud Functions. [Follow this link to see the documentation.](https://firebase.google.com/docs/functions/get-started?authuser=1)
@@ -53,9 +52,7 @@ exports.recountStatus = functions.database.ref('/status/{statususerid}/statuscou
 });
 ```
 
-# Done
 
-# License
 
 
      Copyright [2020] [Imam Candra Kusuma]
