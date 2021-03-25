@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WhatsApp Clone</string>
+    <string name="app_name">FC RONIN</string>
     <string name="term_of_service">Read our <font color="#0FA7F2">Privacy Policy </font>. Tap \"Agree and continue\" to accept the <font color="#0FA7F2">Terms of Service</font>.</string>
     <string name="enter_phone_number">WhatsApp will send an SMS message to verify your phone number. <font color="#0FA7F2">What\'s my number?</font></string>
     <string name="waiting_sms">Waiting to automatically detect an SMS sent to <b>%1$s</b> .<font color="#0FA7F2">Wrong number?</font></string>

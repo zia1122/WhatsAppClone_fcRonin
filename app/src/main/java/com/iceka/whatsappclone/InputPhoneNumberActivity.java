@@ -41,8 +41,8 @@ public class InputPhoneNumberActivity extends AppCompatActivity {
     private String countryName;
 
     private ProgressDialog mProgressDialog;
-   FirebaseDatabase firebaseDatabase;
-FirebaseAuth auth;
+   DatabaseReference firebaseDatabase;
+   FirebaseAuth auth;
     private DatabaseReference mCountryCodesReference;
 
     @Override
@@ -57,14 +57,14 @@ FirebaseAuth auth;
         mEtCountryName = findViewById(R.id.et_country_name);
 
         auth = FirebaseAuth.getInstance();
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        mCountryCodesReference = firebaseDatabase.getReference().child("country_codes");
+        firebaseDatabase = FirebaseDatabase.getInstance().getReference();
+        mCountryCodesReference = firebaseDatabase.child("country_codes");
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         mEtPhoneNumber.requestFocus();
-        
+
 
         mNext.setOnClickListener(new View.OnClickListener() {
             @Override

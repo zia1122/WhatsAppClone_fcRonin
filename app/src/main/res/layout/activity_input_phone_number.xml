@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:text="Enter your phone number"
             android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-            android:textColor="#00897b" />
+            android:textColor="@color/colorPrimary" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -99,7 +99,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="16dp"
-        android:background="#25d366"
+        android:background="@color/colorAccent"
         android:text="next"
         android:textColor="@android:color/white" />
 
